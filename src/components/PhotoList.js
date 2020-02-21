@@ -7,7 +7,7 @@ const PhotoList = ({ photos }) => {
 	albumId = parseInt(albumId);
 	const filteredPhotosArray = photos.filter(photo => photo.albumId === albumId);
   return(
-	<div>
+	<div className='container-2'>
 			{ 
 				 	filteredPhotosArray.map((photo, i) => {
 				 		return (<Photo

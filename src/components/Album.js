@@ -11,12 +11,13 @@ const Album = ({ id, title, photos}) => {
 	 <div className='polaroid'>
 	 <Link to={`/albums/${id}`}>
 	  	<img 
+	  	 width='70%'
 	 	 alt='thumbnail' 
 	 	 src={findthumbnail.url}
 	 	/>
 	  </Link>
-	  <div className='container'>
-	   	<h2>{title}</h2>
+	  <div className='container-3'>
+	   	<h4>{title}</h4>
 	  </div>
 	 </div>
 		);

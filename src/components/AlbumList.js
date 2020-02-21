@@ -3,7 +3,7 @@ import Album from './Album';
 
 const AlbumList = ({ albums, photos }) => {
   return(
-	<div>
+	<div className='container-1'>
 			{
 			  albums.map((album, i) => {
 				 	return (<Album

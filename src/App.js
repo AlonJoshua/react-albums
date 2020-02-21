@@ -42,7 +42,12 @@ class App extends Component {
       <div>
         { !albums.length
           ? (
-            <h1>Loading</h1>
+            <div className='loading'>
+              <h1>Loading...</h1>
+            <div className="spinner-border text-primary" role="status">
+             <span className="sr-only">Loading...</span>
+            </div>
+            </div>
           ) : (
           <Router>
          <Route 
