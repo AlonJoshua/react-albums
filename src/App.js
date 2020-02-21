@@ -45,27 +45,34 @@ class App extends Component {
             <h1>Loading</h1>
           ) : (
           <Router>
-        <h1>My Albums</h1>
-        <SearchBox searchChange={this.onSearchChange} />
          <Route 
          exact={true}
          path='/' 
          render={() => (
+         <div>
+         <h1>My Albums</h1>
+         <SearchBox searchChange={this.onSearchChange} />
          <AlbumList 
           albums={filteredAlbums} 
           photos={filteredPhotos}
           coverClick={this.onCoverClick}
           onRouteChange={this.onRouteChange}
+          searchChange={this.onSearchChange}
          />
+         </div>
            )}
          />
          <Route
          path='/albums/:albumId'
          render={() => (
+         <div>
+         <h1>My Photos</h1>
+         <SearchBox searchChange={this.onSearchChange} />
          <PhotoList
          photos={filteredPhotos}
          albumId={this.stateCheck}
           />
+         </div>
           )}
          />
         </Router>

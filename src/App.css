@@ -21,25 +21,23 @@ h1 {
 
 }
 
-.btn {
-	display: inline-block;
-	align-self: center;
+img {
+	width: 20%;
+	height: auto;
 }
 
 .polaroid {
 	display: grid;
 	grid-template-columns: (auto-fill, minmax(200px, 1fr));
-	/*grid-template-rows: 1fr 1fr 1fr;*/
 	grid-gap: 20px;
 	justify-content: center;
+	align-content: center;
 	background-color: white;
  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  	margin-bottom: 25px;
 }
 
 .container {
-	/*width: 200px;
-	height: auto;*/
 	text-align: center;
   	padding: 10px 20px;
 }

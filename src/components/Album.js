@@ -1,15 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-import PhotoList from './PhotoList';
+import { Link } from 'react-router-dom';
 
-const Album = ({ id, title, photos, PhotoList }) => {
+const Album = ({ id, title, photos}) => {
 	const findthumbnail = photos.find(photo => photo.albumId === id);
 	if (!findthumbnail) {
 		return (
 			<div></div>
 	)
-	}
-	return (
+	} return (
 	 <div className='polaroid'>
 	 <Link to={`/albums/${id}`}>
 	  	<img 

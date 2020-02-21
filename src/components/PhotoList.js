@@ -6,7 +6,6 @@ const PhotoList = ({ photos }) => {
 	let { albumId } = useParams();
 	albumId = parseInt(albumId);
 	const filteredPhotosArray = photos.filter(photo => photo.albumId === albumId);
-	console.log(filteredPhotosArray, photos, albumId);
   return(
 	<div>
 			{ 
