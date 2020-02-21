@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Photo = ({ id, title, url, thumbnailUrl }) => {
+const Photo = ({ PhotoId, title, url, thumbnailUrl }) => {
 
 	return (
 	<div className='polaroid'>

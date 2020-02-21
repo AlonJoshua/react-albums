@@ -1,7 +1,11 @@
 import React from 'react';
 import Photo from './Photo';
+import { useParams } from 'react-router-dom';
 
-const PhotoList = ({ photos, stateCheck }) => {
+const { id } = useParams;
+
+const PhotoList = ({ photos, id }) => {
+	const filteredPhotosArray = photos.filter(photo => photo.albumId === id);
 	// let photoArray = photos.find(photo => photo.id === albums.id)
 	// let albumsArray = albums.map((album, i) => {
 	// 	let photoArray = photos.find(photo => photo.id === album.id)
@@ -13,19 +17,20 @@ const PhotoList = ({ photos, stateCheck }) => {
 	// console.log(albumsArray);
   return(
 	<div>
-			{
-			  photos.map((photo, i) => {
-			  	// filter photos to match album id
-				 	return (<Photo
+			{ 
+				 	filteredPhotosArray.map((photo, i) => {
+				 		return (<Photo
 						key={i}
-						id={photos[i].id}
+						PhotoId={photos[i].id}
 						title={photos[i].title}
 						url={photos[i].url}
 						thumbnailUrl={photos[i].thumbnailUrl}
 					/>
 					);
-				})
-			}
+				 	})
+				 	
+				}
+			
 	</div>
 		);
 }

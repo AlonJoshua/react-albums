@@ -12,7 +12,6 @@ class App extends Component {
 			albums: [],
 			photos: [],
 			searchfield: '',
-      onMainPage: true
 		}
 	}
 
