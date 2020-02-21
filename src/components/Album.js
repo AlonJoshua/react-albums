@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import PhotoList from './PhotoList';
 
 const Album = ({ id, title, photos, PhotoList, coverClick }) => {

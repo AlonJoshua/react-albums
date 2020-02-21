@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import SearchBox from './components/SearchBox';
 import AlbumList from './components/AlbumList';
 import PhotoList from './components/PhotoList';
@@ -37,14 +37,6 @@ class App extends Component {
 	onSearchChange = (event) => {
 		this.setState({ searchfield: event.target.value })
 	}
-
-  	stateCheck = (click) => {
-     const albumId = this.state.albums.map((album, i) => {
-
-        return this.state.albums[i].id
-      })
-  		// console.log(albumId);
-  	}
 
   	onCoverClick = (event) => {
   		this.setState({ onMainPage: false });
