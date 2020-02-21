@@ -13,10 +13,10 @@ const PhotoList = ({ photos }) => {
 				 	filteredPhotosArray.map((photo, i) => {
 				 		return (<Photo
 						key={i}
-						PhotoId={photos[i].id}
-						title={photos[i].title}
-						url={photos[i].url}
-						thumbnailUrl={photos[i].thumbnailUrl}
+						PhotoId={photo.id}
+						title={photo.title}
+						url={photo.url}
+						thumbnailUrl={photo.thumbnailUrl}
 					/>
 					);
 				 	})

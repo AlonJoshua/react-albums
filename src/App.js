@@ -23,28 +23,14 @@ class App extends Component {
         fetch('https://jsonplaceholder.typicode.com/photos')
         .then(response => response.json())
         .then(photos => this.setState({ photos : photos }))
-
-        // for(const album of this.state.albums) {
-        // 	for(const photo of this.state.photos) {
-        // 		if (photo.id === album.id) {
-        // 			this.setState(album.url = photo.url)
-        // 			break;
-        // 		}
-        // 	}
-        // }
 	}
 
 	onSearchChange = (event) => {
 		this.setState({ searchfield: event.target.value })
 	}
 
-  	onCoverClick = (event) => {
-  		this.setState({ onMainPage: false });
-  	}
-
-
 	render() {
-		const { albums, photos, searchfield, onMainPage } = this.state;
+		const { albums, photos, searchfield } = this.state;
 		const filteredAlbums = albums.filter(albums => {
 			return albums.title.toLowerCase().includes(searchfield.toLowerCase());
 		})
@@ -61,12 +47,6 @@ class App extends Component {
           <Router>
         <h1>My Albums</h1>
         <SearchBox searchChange={this.onSearchChange} />
-        <button 
-        onClick={this.stateCheck}
-        className='btn'
-        >
-        state check
-        </button>
          <Route 
          exact={true}
          path='/' 
