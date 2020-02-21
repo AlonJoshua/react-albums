@@ -40,7 +40,7 @@ class App extends Component {
 
      return (
       <div>
-        { albums.length === 0
+        { !albums.length
           ? (
             <h1>Loading</h1>
           ) : (
