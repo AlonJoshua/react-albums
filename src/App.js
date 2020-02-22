@@ -52,7 +52,7 @@ class App extends Component {
           <Router>
          <Route 
          exact={true}
-         path='/' 
+         path='/react-albums/' 
          render={() => (
          <div>
          <h1>My Albums</h1>
