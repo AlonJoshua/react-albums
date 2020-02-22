@@ -68,7 +68,7 @@ class App extends Component {
            )}
          />
          <Route
-         path='/albums/:albumId'
+         path='/react-albums/:albumId'
          render={() => (
          <div>
          <h1>My Photos</h1>

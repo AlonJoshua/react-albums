@@ -9,7 +9,7 @@ const Album = ({ id, title, photos}) => {
 	)
 	} return (
 	 <div className='polaroid grow'>
-	 <Link to={`/albums/${id}`}>
+	 <Link to={`/react-albums/${id}`}>
 	  	<img 
 	  	 width='90%'
 	 	 alt='thumbnail' 
