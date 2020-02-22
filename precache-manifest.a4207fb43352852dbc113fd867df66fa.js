@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f4776440ee884b7c59458cdcd474fdd0",
+    "revision": "00a7e7310ac559402453f8c1263520bf",
     "url": "/react-albums/index.html"
   },
   {
-    "revision": "366d39fca6f758e9d68b",
+    "revision": "d5f0473b43cdc9421b60",
     "url": "/react-albums/static/css/main.19c370c3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-albums/static/js/2.3402d00c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "366d39fca6f758e9d68b",
-    "url": "/react-albums/static/js/main.11e6f032.chunk.js"
+    "revision": "d5f0473b43cdc9421b60",
+    "url": "/react-albums/static/js/main.c145b791.chunk.js"
   },
   {
     "revision": "3f067321a4e76bf2eabd",
