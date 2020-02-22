@@ -8,7 +8,7 @@ const Album = ({ id, title, photos}) => {
 			<div></div>
 	)
 	} return (
-	 <div className='polaroid'>
+	 <div className='polaroid grow'>
 	 <Link to={`/albums/${id}`}>
 	  	<img 
 	  	 width='70%'
