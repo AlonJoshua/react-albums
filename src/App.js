@@ -74,7 +74,7 @@ class App extends Component {
          <h1>My Photos</h1>
          <SearchBox searchChange={this.onSearchChange} />
          <div className='btn-div'>
-         <Link to='/'>
+         <Link to='/react-albums/'>
          <button className='btn'>Back to Albums</button>
          </Link>
          </div>
