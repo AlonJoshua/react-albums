@@ -7,7 +7,7 @@ const Photo = ({ PhotoId, title, url, thumbnailUrl }) => {
 	<div className='polaroid grow'>
       <a href={url} target='_blank' rel="noopener noreferrer">
 	   <img 
-	   width='90%'
+	   width='70%'
 	   alt='thumbnail' 
 	   src={thumbnailUrl}
 	   />

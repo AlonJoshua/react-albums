@@ -12,7 +12,6 @@ h1 {
 	font-family: 'Indie Flower', cursive, sans-serif;
 	font-weight: 600;
 	font-size: 5em;
-	/*text-decoration: underline;*/
 	color: #00308F;
 	margin: 30px;
 	text-shadow: 2px 2px #4169E1;
@@ -30,8 +29,40 @@ h4 {
 	width: 50%;
     padding: 10px;
     font-family: "Comic Sans MS", cursive, sans-serif;
+}
 
+.search {
+	border: 1px solid #555555;
+	border-radius: 8px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
+.search:focus {
+	outline-width: 0;
+}
+
+.btn-div {
+	display: flex;
+	justify-content: center;
+
+}
+
+.btn {
+	display: inline-block;
+	margin: 10px auto;
+	background-color: #008CBA;
+	text-align: center;
+	font-family: 'Indie Flower', cursive, sans-serif;
+	font-weight: 600;
+	font-size: 1.1em;
+	border-radius: 8px;
+	color: #00308F;
+	transition-duration: 0.4s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn:hover {
+ 	color: white;
 }
 
 .polaroid {

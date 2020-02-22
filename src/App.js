@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import SearchBox from './components/SearchBox';
 import AlbumList from './components/AlbumList';
 import PhotoList from './components/PhotoList';
@@ -73,6 +73,11 @@ class App extends Component {
          <div>
          <h1>My Photos</h1>
          <SearchBox searchChange={this.onSearchChange} />
+         <div className='btn-div'>
+         <Link to='/'>
+         <button className='btn'>Back to Albums</button>
+         </Link>
+         </div>
          <PhotoList
          photos={filteredPhotos}
          albumId={this.stateCheck}

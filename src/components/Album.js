@@ -11,7 +11,7 @@ const Album = ({ id, title, photos}) => {
 	 <div className='polaroid grow'>
 	 <Link to={`/albums/${id}`}>
 	  	<img 
-	  	 width='70%'
+	  	 width='90%'
 	 	 alt='thumbnail' 
 	 	 src={findthumbnail.url}
 	 	/>
